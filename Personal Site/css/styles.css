@@ -1,0 +1,24 @@
+body{
+        background-color: #f0ffff;
+    }
+hr{
+        border-style: none;
+        border-top-style: dotted;
+        border-color:grey;
+        border-width: 5px;
+        width: 10%;
+}
+h1{ 
+    color: #C37B89;
+}
+h3{
+    color: #66BFBF;
+}
+
+.profilepic{
+    background-color: blue;
+
+}
+#project{
+    color: rebeccapurple;
+}
