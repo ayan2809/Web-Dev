@@ -3,8 +3,11 @@
 // import ExpenseItem from './components/ExpenseItem';
 
 
-import Expenses from './components/Expenses';
-function App() {
+import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense';
+// function App() {
+// alternative to arrow function
+const App=()=>{
 
   const expense = [
     {
@@ -30,7 +33,7 @@ function App() {
   ];
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense />
       <Expenses items={expense} />
     </div>
   );
