@@ -9,7 +9,7 @@ import NewExpense from './components/NewExpense/NewExpense';
 // alternative to arrow function
 const App=()=>{
 
-  const expense = [
+  const expenses = [
     {
       title: 'Car Insurance',
       amount: 500,
@@ -31,10 +31,13 @@ const App=()=>{
       date: new Date(2022, 3, 1)
     },
   ];
+  const addExpenseHandler = expense => {
+    console.log(expense);
+  };
   return (
     <div>
-      <NewExpense />
-      <Expenses items={expense} />
+      <NewExpense onAddExpense = {addExpenseHandler}/>
+      <Expenses items={expenses} />
     </div>
   );
 }
